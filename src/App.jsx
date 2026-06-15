@@ -9,8 +9,7 @@ function App() {
   const [destination, setDestination] = useState("");
   const [tripDetails, setTripDetails] = useState("");
 
-  const scriptURL = https://script.google.com/macros/s/AKfycbwBF5KLr-s8R7sRY4Fm5dv8LBZXjC-TtSLN2Ck5vQ6UPXPLPhbDdtzaEi_miWKtFA5h_A/exec;
-
+  const scriptURL = "https://script.google.com/macros/s/AKfycbwBF5KLr-s8R7sRY4Fm5dv8LBZXjC-TtSLN2Ck5vQ6UPXPLPhbDdtzaEi_miWKtFA5h_A/exec";
   const handleSubmit = async (e) => {
     e.preventDefault();
 
