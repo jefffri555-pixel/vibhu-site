@@ -53,7 +53,7 @@ function App() {
 
       <header>
         <div className="logo">
-          <img src={logoSrc} alt="Vibhu TravelHub Logo" />
+          <img src={logoSrc} alt="Vibhu Travel Hub Logo" />
         </div>
 
         <nav>
@@ -70,7 +70,7 @@ function App() {
         <div className="hero-content">
           <div className="tag">Coimbatore Bus • Taxi • Tempo Traveller • Tour Booking</div>
           <h1>
-            Travel Smart With <span>Vibhu TravelHub</span>
+            Best Travel Agency in Coimbatore
           </h1>
           <p>
             Vibhu TravelHub offers reliable bus, taxi, SUV, tempo traveller and tour vehicle rental services from Coimbatore.
@@ -453,7 +453,53 @@ function App() {
           </form>
         </div>
       </section>
+      <section className="py-16 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4">
+            Premium Travel Services in Coimbatore
+          </h2>
 
+          <p className="text-lg leading-relaxed">
+            Vibhu Travel Hub is a trusted travel agency in Coimbatore offering
+            premium travel services for family trips, corporate travel, airport
+            transfers, group tours, holiday packages, outstation journeys and
+            customized travel experiences across Tamil Nadu and India.
+          </p>
+        </div>
+      </section>
+      <section className="py-16 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6">
+            Frequently Asked Questions
+          </h2>
+
+          <h3 className="text-xl font-semibold">
+            Which is the best travel agency in Coimbatore?
+          </h3>
+
+          <p className="mb-4">
+            Vibhu Travel Hub offers premium travel services, holiday packages,
+            airport transfers, corporate travel and family trip planning.
+          </p>
+
+          <h3 className="text-xl font-semibold">
+            Do you provide corporate travel services?
+          </h3>
+
+          <p className="mb-4">
+            Yes, Vibhu Travel Hub provides corporate travel solutions for business
+            trips, office tours and group travel.
+          </p>
+
+          <h3 className="text-xl font-semibold">
+            Do you arrange airport transfers?
+          </h3>
+
+          <p>
+            Yes, we provide airport travel services in Coimbatore and Chennai.
+          </p>
+        </div>
+      </section>
       <footer>
         <img src={logoSrc} alt="Vibhu TravelHub Logo" />
         <h3>
