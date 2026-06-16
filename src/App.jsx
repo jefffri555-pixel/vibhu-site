@@ -458,61 +458,107 @@ function App() {
             </button>
           </form>
         </div>
-      </section>
-      {/* SEO Content Section */}
-      <section className="py-24 px-6 bg-gradient-to-b from-[#0a0a0c] via-[#050507] to-[#0a0a0c] relative overflow-hidden border-t border-b border-white/[0.05]">
+      </section>      {/* SEO Content Section */}
+      <section className="py-20 px-4 md:px-8 bg-black relative overflow-hidden border-t border-white/[0.05] flex justify-center items-center" id="seo-services">
         {/* Glow Effects */}
         <div className="absolute top-[-10%] right-[-10%] w-[350px] h-[350px] rounded-full bg-blue-600/10 blur-[120px] pointer-events-none"></div>
         <div className="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] rounded-full bg-red-600/5 blur-[100px] pointer-events-none"></div>
 
-        <motion.div
-          className="max-w-4xl mx-auto relative z-10"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-200 to-neutral-400 tracking-tight leading-tight mb-8 text-center uppercase">
-            Premium Travel Services in <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff0000] to-[#b30000]">Coimbatore</span>
-          </h2>
+        <div className="w-full max-w-[1100px] mx-auto z-10 relative flex flex-col items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="w-full flex flex-col items-center"
+          >
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white text-center uppercase tracking-tight mb-4">
+              Premium Travel Services in <span className="text-[#ff0000]">Coimbatore</span>
+            </h2>
+            <div className="w-24 h-1 bg-[#ff0000] mx-auto mb-12 rounded-full"></div>
 
-          <div className="bg-white/[0.02] backdrop-blur-xl border border-white/[0.05] rounded-3xl p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] shadow-[inset_0_0_30px_rgba(30,58,138,0.15)] hover:border-white/[0.08] transition-all duration-500">
-            <p className="text-lg md:text-xl leading-relaxed text-neutral-300 font-light text-center">
-              Vibhu Travel Hub is a trusted travel agency in Coimbatore offering
-              premium travel services for family trips, corporate travel, airport
-              transfers, group tours, holiday packages, outstation journeys and
-              customized travel experiences across Tamil Nadu and India.
-            </p>
-          </div>
-          <div className="container-center">
+            {/* 4 Premium Cards Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full text-center sm:text-left">
+              
+              {/* Card 1 */}
+              <div className="bg-[#111]/90 backdrop-blur-md border border-[#ff0000]/30 hover:border-[#ff0000] hover:shadow-[0_0_20px_rgba(255,0,0,0.15)] rounded-[20px] p-6 transition-all duration-300 flex flex-col items-center sm:items-start text-center sm:text-left">
+                <div className="w-10 h-10 rounded-lg bg-[#ff0000]/10 border border-[#ff0000]/30 flex items-center justify-center text-[#ff0000] mb-4 shadow-[0_0_10px_rgba(255,0,0,0.1)]">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-white uppercase mb-2">Coimbatore Agency</h3>
+                <p className="text-neutral-400 text-sm leading-relaxed font-light">
+                  Vibhu Travel Hub is a trusted travel agency in Coimbatore offering premium travel services.
+                </p>
+              </div>
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-200 to-white"></h2>
-          </div>
-        </motion.div>
+              {/* Card 2 */}
+              <div className="bg-[#111]/90 backdrop-blur-md border border-[#ff0000]/30 hover:border-[#ff0000] hover:shadow-[0_0_20px_rgba(255,0,0,0.15)] rounded-[20px] p-6 transition-all duration-300 flex flex-col items-center sm:items-start text-center sm:text-left">
+                <div className="w-10 h-10 rounded-lg bg-[#ff0000]/10 border border-[#ff0000]/30 flex items-center justify-center text-[#ff0000] mb-4 shadow-[0_0_10px_rgba(255,0,0,0.1)]">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-white uppercase mb-2">Family & Group</h3>
+                <p className="text-neutral-400 text-sm leading-relaxed font-light">
+                  We provide dedicated support for family trips, group tours, and customized travel experiences.
+                </p>
+              </div>
 
+              {/* Card 3 */}
+              <div className="bg-[#111]/90 backdrop-blur-md border border-[#ff0000]/30 hover:border-[#ff0000] hover:shadow-[0_0_20px_rgba(255,0,0,0.15)] rounded-[20px] p-6 transition-all duration-300 flex flex-col items-center sm:items-start text-center sm:text-left">
+                <div className="w-10 h-10 rounded-lg bg-[#ff0000]/10 border border-[#ff0000]/30 flex items-center justify-center text-[#ff0000] mb-4 shadow-[0_0_10px_rgba(255,0,0,0.1)]">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-white uppercase mb-2">Corporate & Airport</h3>
+                <p className="text-neutral-400 text-sm leading-relaxed font-light">
+                  Get transparent pricing for corporate travel, corporate events, and reliable airport transfers.
+                </p>
+              </div>
+
+              {/* Card 4 */}
+              <div className="bg-[#111]/90 backdrop-blur-md border border-[#ff0000]/30 hover:border-[#ff0000] hover:shadow-[0_0_20px_rgba(255,0,0,0.15)] rounded-[20px] p-6 transition-all duration-300 flex flex-col items-center sm:items-start text-center sm:text-left">
+                <div className="w-10 h-10 rounded-lg bg-[#ff0000]/10 border border-[#ff0000]/30 flex items-center justify-center text-[#ff0000] mb-4 shadow-[0_0_10px_rgba(255,0,0,0.1)]">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-white uppercase mb-2">Holiday & Outstation</h3>
+                <p className="text-neutral-400 text-sm leading-relaxed font-light">
+                  Book customized holiday packages and outstation journeys across Tamil Nadu and India.
+                </p>
+              </div>
+
+            </div>
+          </motion.div>
+        </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 px-6 bg-[#050507] relative overflow-hidden border-b border-white/[0.05]">
+      <section className="py-20 px-4 md:px-8 bg-black relative overflow-hidden border-b border-white/[0.05] flex justify-center items-center" id="faq">
         {/* Glow Effects */}
         <div className="absolute bottom-[10%] right-[-5%] w-[250px] h-[250px] rounded-full bg-blue-600/10 blur-[100px] pointer-events-none"></div>
         <div className="absolute top-[10%] left-[-5%] w-[250px] h-[250px] rounded-full bg-red-600/5 blur-[100px] pointer-events-none"></div>
 
-        <div className="max-w-3xl mx-auto relative z-10">
+        <div className="w-full max-w-[1000px] mx-auto relative z-10 flex flex-col items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-12 flex flex-col items-center w-full"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white uppercase tracking-tight">
-              Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff0000] to-[#b30000]">Questions</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white uppercase tracking-tight text-center">
+              Frequently Asked <span className="text-[#ff0000]">Questions</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#ff0000] to-[#b30000] mx-auto mt-4 rounded-full"></div>
+            <div className="w-24 h-1 bg-[#ff0000] mx-auto mt-4 rounded-full"></div>
           </motion.div>
 
-          <div className="space-y-4">
+          <div className="w-full space-y-4">
             {[
               {
                 question: "Which is the best travel agency in Coimbatore?",
@@ -529,7 +575,7 @@ function App() {
             ].map((faq, index) => (
               <motion.div
                 key={index}
-                className="bg-white/[0.02] backdrop-blur-md border border-white/[0.05] rounded-2xl overflow-hidden transition-all duration-300 hover:bg-white/[0.04] hover:border-red-600/40 shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:shadow-[0_0_20px_rgba(255,0,0,0.05)]"
+                className="bg-[#111]/90 backdrop-blur-md border border-[#ff0000]/30 hover:border-[#ff0000] hover:shadow-[0_0_20px_rgba(255,0,0,0.15)] rounded-[20px] overflow-hidden transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -539,7 +585,7 @@ function App() {
                   className="flex justify-between items-center w-full p-6 text-left text-white focus:outline-none cursor-pointer select-none"
                   onClick={() => toggleFaq(index)}
                 >
-                  <span className="text-lg md:text-xl font-semibold text-neutral-100 flex items-center gap-4">
+                  <span className="text-lg md:text-xl font-semibold text-white flex items-center gap-4">
                     {/* Glowing Question Badge */}
                     <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-gradient-to-br from-[#ff0000]/20 to-[#b30000]/20 border border-[#ff0000]/30 flex items-center justify-center text-[#ff0000] font-bold text-sm shadow-[0_0_10px_rgba(255,0,0,0.1)]">
                       ?
@@ -570,7 +616,7 @@ function App() {
                       }}
                       transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
                     >
-                      <div className="px-6 pb-6 pt-0 text-neutral-300 leading-relaxed text-base md:text-lg border-t border-white/[0.03] pt-4 pl-12">
+                      <div className="px-6 pb-6 text-neutral-300 leading-relaxed text-base md:text-lg border-t border-white/[0.03] pt-4 pl-12">
                         {faq.answer}
                       </div>
                     </motion.div>
@@ -581,6 +627,7 @@ function App() {
           </div>
         </div>
       </section>
+
       <footer>
         <img src={logoSrc} alt="Vibhu TravelHub Logo" />
         <h3>
