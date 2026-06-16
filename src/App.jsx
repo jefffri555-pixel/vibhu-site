@@ -464,8 +464,8 @@ function App() {
         {/* Glow Effects */}
         <div className="absolute top-[-10%] right-[-10%] w-[350px] h-[350px] rounded-full bg-blue-600/10 blur-[120px] pointer-events-none"></div>
         <div className="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] rounded-full bg-red-600/5 blur-[100px] pointer-events-none"></div>
-        
-        <motion.div 
+
+        <motion.div
           className="max-w-4xl mx-auto relative z-10"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -484,7 +484,12 @@ function App() {
               customized travel experiences across Tamil Nadu and India.
             </p>
           </div>
+          <div className="container-center">
+
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-200 to-white"></h2>
+          </div>
         </motion.div>
+
       </section>
 
       {/* FAQ Section */}
@@ -541,12 +546,12 @@ function App() {
                     </span>
                     <span className="leading-snug">{faq.question}</span>
                   </span>
-                  
+
                   {/* Chevron Icon */}
-                  <svg 
-                    className={`w-5 h-5 text-neutral-400 flex-shrink-0 transition-transform duration-300 ${activeFaq === index ? "transform rotate-180 text-[#ff0000]" : ""}`} 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
+                  <svg
+                    className={`w-5 h-5 text-neutral-400 flex-shrink-0 transition-transform duration-300 ${activeFaq === index ? "transform rotate-180 text-[#ff0000]" : ""}`}
+                    fill="none"
+                    viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
