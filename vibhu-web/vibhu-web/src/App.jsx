@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './App.css'
+import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
   const [name, setName] = useState("");
@@ -8,6 +9,11 @@ function App() {
   const [pickupLocation, setPickupLocation] = useState("");
   const [destination, setDestination] = useState("");
   const [tripDetails, setTripDetails] = useState("");
+  const [activeFaq, setActiveFaq] = useState(null);
+
+  const toggleFaq = (index) => {
+    setActiveFaq(activeFaq === index ? null : index);
+  };
 
   const scriptURL = "https://script.google.com/macros/s/AKfycbwBF5KLr-s8R7sRY4Fm5dv8LBZXjC-TtSLN2Ck5vQ6UPXPLPhbDdtzaEi_miWKtFA5h_A/exec";
   const handleSubmit = async (e) => {
@@ -453,51 +459,121 @@ function App() {
           </form>
         </div>
       </section>
-      <section className="py-16 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">
-            Premium Travel Services in Coimbatore
+      {/* SEO Content Section */}
+      <section className="py-24 px-6 bg-gradient-to-b from-[#0a0a0c] via-[#050507] to-[#0a0a0c] relative overflow-hidden border-t border-b border-white/[0.05]">
+        {/* Glow Effects */}
+        <div className="absolute top-[-10%] right-[-10%] w-[350px] h-[350px] rounded-full bg-blue-600/10 blur-[120px] pointer-events-none"></div>
+        <div className="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] rounded-full bg-red-600/5 blur-[100px] pointer-events-none"></div>
+        
+        <motion.div 
+          className="max-w-4xl mx-auto relative z-10"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-200 to-neutral-400 tracking-tight leading-tight mb-8 text-center uppercase">
+            Premium Travel Services in <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff0000] to-[#b30000]">Coimbatore</span>
           </h2>
 
-          <p className="text-lg leading-relaxed">
-            Vibhu Travel Hub is a trusted travel agency in Coimbatore offering
-            premium travel services for family trips, corporate travel, airport
-            transfers, group tours, holiday packages, outstation journeys and
-            customized travel experiences across Tamil Nadu and India.
-          </p>
-        </div>
+          <div className="bg-white/[0.02] backdrop-blur-xl border border-white/[0.05] rounded-3xl p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] shadow-[inset_0_0_30px_rgba(30,58,138,0.15)] hover:border-white/[0.08] transition-all duration-500">
+            <p className="text-lg md:text-xl leading-relaxed text-neutral-300 font-light text-center">
+              Vibhu Travel Hub is a trusted travel agency in Coimbatore offering
+              premium travel services for family trips, corporate travel, airport
+              transfers, group tours, holiday packages, outstation journeys and
+              customized travel experiences across Tamil Nadu and India.
+            </p>
+          </div>
+        </motion.div>
       </section>
-      <section className="py-16 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6">
-            Frequently Asked Questions
-          </h2>
 
-          <h3 className="text-xl font-semibold">
-            Which is the best travel agency in Coimbatore?
-          </h3>
+      {/* FAQ Section */}
+      <section className="py-24 px-6 bg-[#050507] relative overflow-hidden border-b border-white/[0.05]">
+        {/* Glow Effects */}
+        <div className="absolute bottom-[10%] right-[-5%] w-[250px] h-[250px] rounded-full bg-blue-600/10 blur-[100px] pointer-events-none"></div>
+        <div className="absolute top-[10%] left-[-5%] w-[250px] h-[250px] rounded-full bg-red-600/5 blur-[100px] pointer-events-none"></div>
 
-          <p className="mb-4">
-            Vibhu Travel Hub offers premium travel services, holiday packages,
-            airport transfers, corporate travel and family trip planning.
-          </p>
+        <div className="max-w-3xl mx-auto relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white uppercase tracking-tight">
+              Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff0000] to-[#b30000]">Questions</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#ff0000] to-[#b30000] mx-auto mt-4 rounded-full"></div>
+          </motion.div>
 
-          <h3 className="text-xl font-semibold">
-            Do you provide corporate travel services?
-          </h3>
+          <div className="space-y-4">
+            {[
+              {
+                question: "Which is the best travel agency in Coimbatore?",
+                answer: "Vibhu Travel Hub offers premium travel services, holiday packages, airport transfers, corporate travel and family trip planning."
+              },
+              {
+                question: "Do you provide corporate travel services?",
+                answer: "Yes, Vibhu Travel Hub provides corporate travel solutions for business trips, office tours and group travel."
+              },
+              {
+                question: "Do you arrange airport transfers?",
+                answer: "Yes, we provide airport travel services in Coimbatore and Chennai."
+              }
+            ].map((faq, index) => (
+              <motion.div
+                key={index}
+                className="bg-white/[0.02] backdrop-blur-md border border-white/[0.05] rounded-2xl overflow-hidden transition-all duration-300 hover:bg-white/[0.04] hover:border-red-600/40 shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:shadow-[0_0_20px_rgba(255,0,0,0.05)]"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+              >
+                <button
+                  className="flex justify-between items-center w-full p-6 text-left text-white focus:outline-none cursor-pointer select-none"
+                  onClick={() => toggleFaq(index)}
+                >
+                  <span className="text-lg md:text-xl font-semibold text-neutral-100 flex items-center gap-4">
+                    {/* Glowing Question Badge */}
+                    <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-gradient-to-br from-[#ff0000]/20 to-[#b30000]/20 border border-[#ff0000]/30 flex items-center justify-center text-[#ff0000] font-bold text-sm shadow-[0_0_10px_rgba(255,0,0,0.1)]">
+                      ?
+                    </span>
+                    <span className="leading-snug">{faq.question}</span>
+                  </span>
+                  
+                  {/* Chevron Icon */}
+                  <svg 
+                    className={`w-5 h-5 text-neutral-400 flex-shrink-0 transition-transform duration-300 ${activeFaq === index ? "transform rotate-180 text-[#ff0000]" : ""}`} 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
 
-          <p className="mb-4">
-            Yes, Vibhu Travel Hub provides corporate travel solutions for business
-            trips, office tours and group travel.
-          </p>
-
-          <h3 className="text-xl font-semibold">
-            Do you arrange airport transfers?
-          </h3>
-
-          <p>
-            Yes, we provide airport travel services in Coimbatore and Chennai.
-          </p>
+                <AnimatePresence initial={false}>
+                  {activeFaq === index && (
+                    <motion.div
+                      initial="collapsed"
+                      animate="open"
+                      exit="collapsed"
+                      variants={{
+                        open: { opacity: 1, height: "auto" },
+                        collapsed: { opacity: 0, height: 0 }
+                      }}
+                      transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
+                    >
+                      <div className="px-6 pb-6 pt-0 text-neutral-300 leading-relaxed text-base md:text-lg border-t border-white/[0.03] pt-4 pl-12">
+                        {faq.answer}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
       <footer>
