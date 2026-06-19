@@ -15,7 +15,7 @@ function App() {
     setActiveFaq(activeFaq === index ? null : index);
   };
 
-  const scriptURL = "https://script.google.com/macros/s/AKfycbwBF5KLr-s8R7sRY4Fm5dv8LBZXjC-TtSLN2Ck5vQ6UPXPLPhbDdtzaEi_miWKtFA5h_A/exec";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbzkeVxrKIH33OW-253bKnIdbwuRz0PK7PF_1MnJT-N0Na_aFctCzRcgAroC1ab4ei5P/exec";
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -479,13 +479,13 @@ function App() {
 
             {/* 4 Premium Cards Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full text-center sm:text-left">
-              
+
               {/* Card 1 */}
               <div className="bg-[#111]/90 backdrop-blur-md border border-[#ff0000]/30 hover:border-[#ff0000] hover:shadow-[0_0_20px_rgba(255,0,0,0.15)] rounded-[20px] p-6 transition-all duration-300 flex flex-col items-center sm:items-start text-center sm:text-left">
                 <div className="w-10 h-10 rounded-lg bg-[#ff0000]/10 border border-[#ff0000]/30 flex items-center justify-center text-[#ff0000] mb-4 shadow-[0_0_10px_rgba(255,0,0,0.1)]">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold text-white uppercase mb-2">Coimbatore Agency</h3>
@@ -498,7 +498,7 @@ function App() {
               <div className="bg-[#111]/90 backdrop-blur-md border border-[#ff0000]/30 hover:border-[#ff0000] hover:shadow-[0_0_20px_rgba(255,0,0,0.15)] rounded-[20px] p-6 transition-all duration-300 flex flex-col items-center sm:items-start text-center sm:text-left">
                 <div className="w-10 h-10 rounded-lg bg-[#ff0000]/10 border border-[#ff0000]/30 flex items-center justify-center text-[#ff0000] mb-4 shadow-[0_0_10px_rgba(255,0,0,0.1)]">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold text-white uppercase mb-2">Family & Group</h3>
@@ -511,7 +511,7 @@ function App() {
               <div className="bg-[#111]/90 backdrop-blur-md border border-[#ff0000]/30 hover:border-[#ff0000] hover:shadow-[0_0_20px_rgba(255,0,0,0.15)] rounded-[20px] p-6 transition-all duration-300 flex flex-col items-center sm:items-start text-center sm:text-left">
                 <div className="w-10 h-10 rounded-lg bg-[#ff0000]/10 border border-[#ff0000]/30 flex items-center justify-center text-[#ff0000] mb-4 shadow-[0_0_10px_rgba(255,0,0,0.1)]">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold text-white uppercase mb-2">Corporate & Airport</h3>
@@ -524,7 +524,7 @@ function App() {
               <div className="bg-[#111]/90 backdrop-blur-md border border-[#ff0000]/30 hover:border-[#ff0000] hover:shadow-[0_0_20px_rgba(255,0,0,0.15)] rounded-[20px] p-6 transition-all duration-300 flex flex-col items-center sm:items-start text-center sm:text-left">
                 <div className="w-10 h-10 rounded-lg bg-[#ff0000]/10 border border-[#ff0000]/30 flex items-center justify-center text-[#ff0000] mb-4 shadow-[0_0_10px_rgba(255,0,0,0.1)]">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold text-white uppercase mb-2">Holiday & Outstation</h3>

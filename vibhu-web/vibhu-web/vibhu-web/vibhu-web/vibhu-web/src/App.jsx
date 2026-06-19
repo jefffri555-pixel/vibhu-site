@@ -15,7 +15,7 @@ function App() {
     setActiveFaq(activeFaq === index ? null : index);
   };
 
-  const scriptURL = "https://script.google.com/macros/s/AKfycbwBF5KLr-s8R7sRY4Fm5dv8LBZXjC-TtSLN2Ck5vQ6UPXPLPhbDdtzaEi_miWKtFA5h_A/exec";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbzkeVxrKIH33OW-253bKnIdbwuRz0PK7PF_1MnJT-N0Na_aFctCzRcgAroC1ab4ei5P/exec";
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -464,8 +464,8 @@ function App() {
         {/* Glow Effects */}
         <div className="absolute top-[-10%] right-[-10%] w-[350px] h-[350px] rounded-full bg-blue-600/10 blur-[120px] pointer-events-none"></div>
         <div className="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] rounded-full bg-red-600/5 blur-[100px] pointer-events-none"></div>
-        
-        <motion.div 
+
+        <motion.div
           className="max-w-4xl mx-auto relative z-10"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -541,12 +541,12 @@ function App() {
                     </span>
                     <span className="leading-snug">{faq.question}</span>
                   </span>
-                  
+
                   {/* Chevron Icon */}
-                  <svg 
-                    className={`w-5 h-5 text-neutral-400 flex-shrink-0 transition-transform duration-300 ${activeFaq === index ? "transform rotate-180 text-[#ff0000]" : ""}`} 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
+                  <svg
+                    className={`w-5 h-5 text-neutral-400 flex-shrink-0 transition-transform duration-300 ${activeFaq === index ? "transform rotate-180 text-[#ff0000]" : ""}`}
+                    fill="none"
+                    viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
