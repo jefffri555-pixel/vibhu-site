@@ -138,63 +138,173 @@ function App() {
         </div>
 
         <div className="grid">
+          {/* Card 1: Sedan - 4 Seater */}
           <div className="card">
-            <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=1000&q=80" alt="Sedan Taxi" />
+            <img src="/sedan.png" alt="Sedan - 4 Seater" />
             <div className="card-content">
               <span className="badge">Best for 1 - 4 Members</span>
-              <h3>Sedan Taxi</h3>
+              <h3>Sedan – 4 Seater</h3>
+              <div className="price-badge">₹3,000 / Day</div>
               <p>Ideal for local city rides, airport transfer, railway station pickup, business trips and short outstation journeys.</p>
               <ul className="list">
-                <li>AC comfort</li>
-                <li>Professional driver</li>
-                <li>Local and outstation booking</li>
+                <li>AC comfort & clean cabin</li>
+                <li>Economical local/outstation</li>
+                <li>Professional driver support</li>
               </ul>
-              <a href="tel:+919655866660" className="btn">Book Sedan</a>
+              <a href="https://wa.me/919655866660?text=Hi%20Vibhu%20TravelHub,%20I'm%20interested%20in%20booking%20a%20Sedan%20(4%20Seater)." className="btn" target="_blank" rel="noopener noreferrer">Book Now</a>
             </div>
           </div>
 
+          {/* Card 2: Ertiga - 7 Seater */}
           <div className="card">
-            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1000&q=80" alt="SUV Rental" />
+            <img src="/ertiga.png" alt="Ertiga - 7 Seater" />
             <div className="card-content">
               <span className="badge">Best for 5 - 7 Members</span>
-              <h3>SUV Rental</h3>
-              <p>Comfortable SUV vehicles for family tours, hill station trips, long routes and extra luggage travel.</p>
+              <h3>Ertiga – 7 Seater</h3>
+              <div className="price-badge">₹4,500 / Day</div>
+              <p>Comfortable 7-seater MPV offering flexible seating and great value for family trips and outstation travel.</p>
               <ul className="list">
-                <li>Spacious seating</li>
-                <li>Family friendly</li>
-                <li>Good luggage space</li>
+                <li>Double blower AC cooling</li>
+                <li>Budget-friendly SUV choice</li>
+                <li>Ideal for family outings</li>
               </ul>
-              <a href="tel:+919655866660" className="btn">Book SUV</a>
+              <a href="https://wa.me/919655866660?text=Hi%20Vibhu%20TravelHub,%20I'm%20interested%20in%20booking%20an%20Ertiga%20(7%20Seater)." className="btn" target="_blank" rel="noopener noreferrer">Book Now</a>
             </div>
           </div>
 
+          {/* Card 3: Innova Crysta - 7 Seater */}
           <div className="card">
-            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1000&q=80" alt="Tempo Traveller" />
+            <img src="/innova.png" alt="Innova Crysta - 7 Seater" />
             <div className="card-content">
-              <span className="badge">Best for 10 - 17 Members</span>
-              <h3>Tempo Traveller</h3>
-              <p>Perfect for family groups, office outings, pilgrimages, college tours and weekend trips from Coimbatore.</p>
+              <span className="badge">Best for 5 - 7 Members</span>
+              <h3>Innova Crysta – 7 Seater</h3>
+              <div className="price-badge">₹6,000 / Day</div>
+              <p>Premium Toyota Innova Crysta for high-end comfort, luxury family outings, and long outstation journeys.</p>
               <ul className="list">
-                <li>AC / Non-AC options</li>
-                <li>Pushback seats</li>
-                <li>Group travel comfort</li>
+                <li>Premium captain seats</li>
+                <li>Superior ride suspension</li>
+                <li>Ample trunk space</li>
               </ul>
-              <a href="tel:+919655866660" className="btn">Book Traveller</a>
+              <a href="https://wa.me/919655866660?text=Hi%20Vibhu%20TravelHub,%20I'm%20interested%20in%20booking%20an%20Innova%20Crysta%20(7%20Seater)." className="btn" target="_blank" rel="noopener noreferrer">Book Now</a>
             </div>
           </div>
 
+          {/* Card 4: Tempo Traveller AC - 12 Seater */}
           <div className="card">
-            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=80" alt="Bus Rental" />
+            <img src="/tempo_ac.png" alt="Tempo Traveller AC - 12 Seater" />
             <div className="card-content">
-              <span className="badge">Best for Large Groups</span>
-              <h3>Bus Rental</h3>
-              <p>AC and Non-AC bus rental services for school trips, marriage functions, corporate tours and long-distance travel.</p>
+              <span className="badge">Best for 8 - 12 Members</span>
+              <h3>Tempo Traveller AC – 12 Seater</h3>
+              <div className="price-badge">₹7,500 / Day</div>
+              <p>Fully air-conditioned Tempo Traveller with pushback luxury seats, ideal for medium groups and family tours.</p>
               <ul className="list">
-                <li>Seater and sleeper options</li>
-                <li>Wedding and event travel</li>
-                <li>Long route travel support</li>
+                <li>Premium AC system</li>
+                <li>Pushback reclining seats</li>
+                <li>Onboard media system</li>
               </ul>
-              <a href="tel:+919655866660" className="btn">Book Bus</a>
+              <a href="https://wa.me/919655866660?text=Hi%20Vibhu%20TravelHub,%20I'm%20interested%20in%20booking%20an%20AC%20Tempo%20Traveller%20(12%20Seater)." className="btn" target="_blank" rel="noopener noreferrer">Book Now</a>
+            </div>
+          </div>
+
+          {/* Card 5: Tempo Traveller Non AC - 12 Seater */}
+          <div className="card">
+            <img src="/tempo_nonac.png" alt="Tempo Traveller Non AC - 12 Seater" />
+            <div className="card-content">
+              <span className="badge">Best for 8 - 12 Members</span>
+              <h3>Tempo Traveller Non AC – 12 Seater</h3>
+              <div className="price-badge">₹6,500 / Day</div>
+              <p>Budget-friendly non-AC Tempo Traveller for short trips, pilgrimages, and local events around Coimbatore.</p>
+              <ul className="list">
+                <li>Comfortable group travel</li>
+                <li>Most budget-friendly rate</li>
+                <li>Spacious seating layout</li>
+              </ul>
+              <a href="https://wa.me/919655866660?text=Hi%20Vibhu%20TravelHub,%20I'm%20interested%20in%20booking%20a%20Non-AC%20Tempo%20Traveller%20(12%20Seater)." className="btn" target="_blank" rel="noopener noreferrer">Book Now</a>
+            </div>
+          </div>
+
+          {/* Card 6: Traveller Coach - 20 Seater */}
+          <div className="card">
+            <img src="/traveller_20.png" alt="Traveller Coach - 20 Seater" />
+            <div className="card-content">
+              <span className="badge">Best for 15 - 20 Members</span>
+              <h3>Traveller Coach – 20 Seater</h3>
+              <div className="price-badge">₹10,000 / Day</div>
+              <p>Mid-sized luxury coach providing comfortable seating and ample storage for corporate events and medium tours.</p>
+              <ul className="list">
+                <li>AC luxury cabin comfort</li>
+                <li>Wide aisle & headroom</li>
+                <li>Great for corporate trips</li>
+              </ul>
+              <a href="https://wa.me/919655866660?text=Hi%20Vibhu%20TravelHub,%20I'm%20interested%20in%20booking%20a%2020%20Seater%20Traveller%20Coach." className="btn" target="_blank" rel="noopener noreferrer">Book Now</a>
+            </div>
+          </div>
+
+          {/* Card 7: Traveller Coach - 26 Seater */}
+          <div className="card">
+            <img src="/traveller_26.png" alt="Traveller Coach - 26 Seater" />
+            <div className="card-content">
+              <span className="badge">Best for 20 - 26 Members</span>
+              <h3>Traveller Coach – 26 Seater</h3>
+              <div className="price-badge">₹12,000 / Day</div>
+              <p>High-capacity luxury traveller coach designed for larger groups, family functions, and temple excursions.</p>
+              <ul className="list">
+                <li>Individual AC control vents</li>
+                <li>Pushback seats with armrest</li>
+                <li>Spacious overhead luggage</li>
+              </ul>
+              <a href="https://wa.me/919655866660?text=Hi%20Vibhu%20TravelHub,%20I'm%20interested%20in%20booking%20a%2026%20Seater%20Traveller%20Coach." className="btn" target="_blank" rel="noopener noreferrer">Book Now</a>
+            </div>
+          </div>
+
+          {/* Card 8: Mini Bus - 30 Seater */}
+          <div className="card">
+            <img src="/minibus.png" alt="Mini Bus - 30 Seater" />
+            <div className="card-content">
+              <span className="badge">Best for 25 - 30 Members</span>
+              <h3>Mini Bus – 30 Seater</h3>
+              <div className="price-badge">₹14,000 / Day</div>
+              <p>Comfortable 30-seater mini bus, perfect for city tours, corporate outings, and wedding guest transport.</p>
+              <ul className="list">
+                <li>Air-suspension comfort</li>
+                <li>Individual AC cooling</li>
+                <li>Spacious comfortable seats</li>
+              </ul>
+              <a href="https://wa.me/919655866660?text=Hi%20Vibhu%20TravelHub,%20I'm%20interested%20in%20booking%20a%2030%20Seater%20Mini%20Bus." className="btn" target="_blank" rel="noopener noreferrer">Book Now</a>
+            </div>
+          </div>
+
+          {/* Card 9: Coach Bus - 30 Seater */}
+          <div className="card">
+            <img src="/coachbus.png" alt="Coach Bus - 30 Seater" />
+            <div className="card-content">
+              <span className="badge">Best for 25 - 30 Members</span>
+              <h3>Coach Bus – 30 Seater</h3>
+              <div className="price-badge">₹16,000 / Day</div>
+              <p>Premium high-deck touring coach offering standard touring comfort and massive luggage compartments.</p>
+              <ul className="list">
+                <li>High-deck touring design</li>
+                <li>Under-cabin large storage</li>
+                <li>Perfect for long tours</li>
+              </ul>
+              <a href="https://wa.me/919655866660?text=Hi%20Vibhu%20TravelHub,%20I'm%20interested%20in%20booking%20a%2030%20Seater%20Coach%20Bus." className="btn" target="_blank" rel="noopener noreferrer">Book Now</a>
+            </div>
+          </div>
+
+          {/* Card 10: Luxury Bus - 40 Seater */}
+          <div className="card">
+            <img src="/luxurybus.png" alt="Luxury Bus - 40 Seater" />
+            <div className="card-content">
+              <span className="badge">Best for 30 - 40 Members</span>
+              <h3>Luxury Bus – 40 Seater</h3>
+              <div className="price-badge">₹20,000 / Day</div>
+              <p>Premium multi-axle luxury coach bus for ultimate long-distance comfort and large tour groups.</p>
+              <ul className="list">
+                <li>Premium pushback seating</li>
+                <li>Sleeper/seater configurations</li>
+                <li>Experienced long-route crew</li>
+              </ul>
+              <a href="https://wa.me/919655866660?text=Hi%20Vibhu%20TravelHub,%20I'm%20interested%20in%20booking%20a%2040%20Seater%20Luxury%20Bus." className="btn" target="_blank" rel="noopener noreferrer">Book Now</a>
             </div>
           </div>
         </div>
@@ -458,122 +568,149 @@ function App() {
             </button>
           </form>
         </div>
-      </section>      {/* SEO Content Section */}
-      <section className="py-20 px-4 md:px-8 bg-black relative overflow-hidden border-t border-white/[0.05] flex justify-center items-center" id="seo-services">
-        {/* Glow Effects */}
-        <div className="absolute top-[-10%] right-[-10%] w-[350px] h-[350px] rounded-full bg-blue-600/10 blur-[120px] pointer-events-none"></div>
-        <div className="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] rounded-full bg-red-600/5 blur-[100px] pointer-events-none"></div>
-<<<<<<< HEAD
+      </section>      {/* Redesigned Luxury Premium Travel Services Section */}
+      <section className="py-24 px-4 md:px-8 luxury-services-section relative overflow-hidden flex justify-center items-center" id="seo-services">
+        {/* Animated Particles & Glow Effects */}
+        <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] rounded-full bg-red-600/10 blur-[150px] pointer-events-none animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-[450px] h-[450px] rounded-full bg-red-800/5 blur-[160px] pointer-events-none animate-pulse" style={{ animationDelay: '2s' }}></div>
+
+        {/* Background Grid Lines (Decorative) */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
+
+        {/* Animated Particles Container */}
+        <div className="particles-container absolute inset-0 pointer-events-none opacity-40">
+          <div className="particle particle-1"></div>
+          <div className="particle particle-2"></div>
+          <div className="particle particle-3"></div>
+          <div className="particle particle-4"></div>
+          <div className="particle particle-5"></div>
+        </div>
 
         <div className="w-full max-w-[1100px] mx-auto z-10 relative flex flex-col items-center">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8 }}
             className="w-full flex flex-col items-center"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white text-center uppercase tracking-tight mb-4">
-              Premium Travel Services in <span className="text-[#ff0000]">Coimbatore</span>
+            <span className="text-[#ff0000] text-sm font-bold tracking-[0.25em] uppercase mb-4">Excellence in Motion</span>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white text-center uppercase tracking-tight leading-[1.1] mb-16 max-w-3xl">
+              Premium Travel Services In <br />
+              <span className="glow-gradient-text relative inline-block mt-2 pb-1">
+                Coimbatore
+                <span className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-[#ff0000] to-transparent shadow-[0_0_12px_#ff0000]"></span>
+              </span>
             </h2>
-            <div className="w-24 h-1 bg-[#ff0000] mx-auto mb-12 rounded-full"></div>
 
-            {/* 4 Premium Cards Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full text-center sm:text-left">
-              
+            {/* 2x2 Centered Grid Layout */}
+            <div className="luxury-grid">
               {/* Card 1 */}
-              <div className="bg-[#111]/90 backdrop-blur-md border border-[#ff0000]/30 hover:border-[#ff0000] hover:shadow-[0_0_20px_rgba(255,0,0,0.15)] rounded-[20px] p-6 transition-all duration-300 flex flex-col items-center sm:items-start text-center sm:text-left">
-                <div className="w-10 h-10 rounded-lg bg-[#ff0000]/10 border border-[#ff0000]/30 flex items-center justify-center text-[#ff0000] mb-4 shadow-[0_0_10px_rgba(255,0,0,0.1)]">
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                  </svg>
+              <motion.div
+                whileHover={{ y: -8, scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className="luxury-glass-card group text-left items-start"
+              >
+                <div className="icon-glow-wrap">
+                  <div className="luxury-icon-box">
+                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold text-white uppercase mb-2">Coimbatore Agency</h3>
-                <p className="text-neutral-400 text-sm leading-relaxed font-light">
-                  Vibhu Travel Hub is a trusted travel agency in Coimbatore offering premium travel services.
+                <h3 className="text-xl font-extrabold text-white uppercase tracking-wider mb-3 group-hover:text-[#ff0000] transition-colors">
+                  BEST TRAVEL AGENCY IN COIMBATORE & CHENNAI
+                </h3>
+                <p className="text-neutral-400 text-[15px] leading-relaxed font-light">
+                  Vibhu Travel Hub is a trusted travel agency providing premium travel services across Coimbatore and Chennai. We specialize in customized travel packages, family trips, corporate travel solutions, and seamless travel experiences. Our focus is on comfort, reliability, and customer satisfaction for every journey.
                 </p>
-              </div>
+              </motion.div>
 
               {/* Card 2 */}
-              <div className="bg-[#111]/90 backdrop-blur-md border border-[#ff0000]/30 hover:border-[#ff0000] hover:shadow-[0_0_20px_rgba(255,0,0,0.15)] rounded-[20px] p-6 transition-all duration-300 flex flex-col items-center sm:items-start text-center sm:text-left">
-                <div className="w-10 h-10 rounded-lg bg-[#ff0000]/10 border border-[#ff0000]/30 flex items-center justify-center text-[#ff0000] mb-4 shadow-[0_0_10px_rgba(255,0,0,0.1)]">
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
-                  </svg>
+              <motion.div
+                whileHover={{ y: -8, scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className="luxury-glass-card group text-left items-start"
+              >
+                <div className="icon-glow-wrap">
+                  <div className="luxury-icon-box">
+                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold text-white uppercase mb-2">Family & Group</h3>
-                <p className="text-neutral-400 text-sm leading-relaxed font-light">
-                  We provide dedicated support for family trips, group tours, and customized travel experiences.
+                <h3 className="text-xl font-extrabold text-white uppercase tracking-wider mb-3 group-hover:text-[#ff0000] transition-colors">
+                  FAMILY & GROUP TRAVEL SERVICES
+                </h3>
+                <p className="text-neutral-400 text-[15px] leading-relaxed font-light">
+                  Create unforgettable memories with our family and group travel services. From weekend getaways to long holiday tours, we plan comfortable and well-organized trips tailored to your needs. Experience hassle-free travel with professional planning and dedicated support.
                 </p>
-              </div>
+              </motion.div>
 
               {/* Card 3 */}
-              <div className="bg-[#111]/90 backdrop-blur-md border border-[#ff0000]/30 hover:border-[#ff0000] hover:shadow-[0_0_20px_rgba(255,0,0,0.15)] rounded-[20px] p-6 transition-all duration-300 flex flex-col items-center sm:items-start text-center sm:text-left">
-                <div className="w-10 h-10 rounded-lg bg-[#ff0000]/10 border border-[#ff0000]/30 flex items-center justify-center text-[#ff0000] mb-4 shadow-[0_0_10px_rgba(255,0,0,0.1)]">
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                  </svg>
+              <motion.div
+                whileHover={{ y: -8, scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className="luxury-glass-card group text-left items-start"
+              >
+                <div className="icon-glow-wrap">
+                  <div className="luxury-icon-box">
+                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold text-white uppercase mb-2">Corporate & Airport</h3>
-                <p className="text-neutral-400 text-sm leading-relaxed font-light">
-                  Get transparent pricing for corporate travel, corporate events, and reliable airport transfers.
+                <h3 className="text-xl font-extrabold text-white uppercase tracking-wider mb-3 group-hover:text-[#ff0000] transition-colors">
+                  CORPORATE & AIRPORT TRAVEL SERVICES
+                </h3>
+                <p className="text-neutral-400 text-[15px] leading-relaxed font-light">
+                  We provide reliable corporate travel solutions and airport travel services for businesses and professionals. Whether it's executive travel, team outings, business events, or airport transfers, we ensure punctuality, comfort, and a premium travel experience.
                 </p>
-              </div>
+              </motion.div>
 
               {/* Card 4 */}
-              <div className="bg-[#111]/90 backdrop-blur-md border border-[#ff0000]/30 hover:border-[#ff0000] hover:shadow-[0_0_20px_rgba(255,0,0,0.15)] rounded-[20px] p-6 transition-all duration-300 flex flex-col items-center sm:items-start text-center sm:text-left">
-                <div className="w-10 h-10 rounded-lg bg-[#ff0000]/10 border border-[#ff0000]/30 flex items-center justify-center text-[#ff0000] mb-4 shadow-[0_0_10px_rgba(255,0,0,0.1)]">
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
-                  </svg>
+              <motion.div
+                whileHover={{ y: -8, scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className="luxury-glass-card group text-left items-start"
+              >
+                <div className="icon-glow-wrap">
+                  <div className="luxury-icon-box">
+                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                    </svg>
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold text-white uppercase mb-2">Holiday & Outstation</h3>
-                <p className="text-neutral-400 text-sm leading-relaxed font-light">
-                  Book customized holiday packages and outstation journeys across Tamil Nadu and India.
+                <h3 className="text-xl font-extrabold text-white uppercase tracking-wider mb-3 group-hover:text-[#ff0000] transition-colors">
+                  HOLIDAY PACKAGES & OUTSTATION TRIPS
+                </h3>
+                <p className="text-neutral-400 text-[15px] leading-relaxed font-light">
+                  Explore India with our customized holiday packages and outstation travel services. From family vacations and pilgrimage tours to luxury travel experiences, we create memorable journeys designed around your preferences, budget, and travel goals.
                 </p>
-              </div>
-
+              </motion.div>
             </div>
           </motion.div>
         </div>
-=======
-
-        <motion.div
-          className="max-w-4xl mx-auto relative z-10"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-200 to-neutral-400 tracking-tight leading-tight mb-8 text-center uppercase">
-            Premium Travel Services in <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff0000] to-[#b30000]">Coimbatore</span>
-          </h2>
-
-          <div className="bg-white/[0.02] backdrop-blur-xl border border-white/[0.05] rounded-3xl p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.5)] shadow-[inset_0_0_30px_rgba(30,58,138,0.15)] hover:border-white/[0.08] transition-all duration-500">
-            <p className="text-lg md:text-xl leading-relaxed text-neutral-300 font-light text-center">
-              Vibhu Travel Hub is a trusted travel agency in Coimbatore offering
-              premium travel services for family trips, corporate travel, airport
-              transfers, group tours, holiday packages, outstation journeys and
-              customized travel experiences across Tamil Nadu and India.
-            </p>
-          </div>
-          <div className="container-center">
-
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-200 to-white"></h2>
-          </div>
-        </motion.div>
-
->>>>>>> 30687824fc900eaf7ac84a18008ec3d0540734b2
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-20 px-4 md:px-8 bg-black relative overflow-hidden border-b border-white/[0.05] flex justify-center items-center" id="faq">
-        {/* Glow Effects */}
-        <div className="absolute bottom-[10%] right-[-5%] w-[250px] h-[250px] rounded-full bg-blue-600/10 blur-[100px] pointer-events-none"></div>
-        <div className="absolute top-[10%] left-[-5%] w-[250px] h-[250px] rounded-full bg-red-600/5 blur-[100px] pointer-events-none"></div>
+      {/* Redesigned Luxury FAQ Section */}
+      <section className="py-24 px-4 md:px-8 luxury-faq-section relative overflow-hidden flex justify-center items-center" id="faq">
+        {/* Animated Particles & Glow Effects */}
+        <div className="absolute top-1/4 left-1/4 w-[350px] h-[350px] rounded-full bg-red-600/10 blur-[130px] pointer-events-none animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] rounded-full bg-red-800/5 blur-[120px] pointer-events-none animate-pulse" style={{ animationDelay: '1.5s' }}></div>
 
-        <div className="w-full max-w-[1000px] mx-auto relative z-10 flex flex-col items-center">
+        {/* Background Grid Lines (Decorative) */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
+
+        {/* Animated Particles Container */}
+        <div className="particles-container absolute inset-0 pointer-events-none opacity-30">
+          <div className="particle particle-3"></div>
+          <div className="particle particle-4"></div>
+          <div className="particle particle-5"></div>
+        </div>
+
+        <div className="w-full max-w-[1100px] mx-auto relative z-10 flex flex-col items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -581,30 +718,41 @@ function App() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12 flex flex-col items-center w-full"
           >
-            <h2 className="text-3xl md:text-4xl font-extrabold text-white uppercase tracking-tight text-center">
-              Frequently Asked <span className="text-[#ff0000]">Questions</span>
+            <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tight text-center leading-[1.1]">
+              Frequently Asked <br className="md:hidden" />
+              <span className="glow-gradient-text relative inline-block mt-2 pb-1">
+                Questions
+                <span className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-[#ff0000] to-transparent shadow-[0_0_12px_#ff0000]"></span>
+              </span>
             </h2>
-            <div className="w-24 h-1 bg-[#ff0000] mx-auto mt-4 rounded-full"></div>
           </motion.div>
 
-          <div className="w-full space-y-4">
+          <div className="w-full space-y-5 mt-4 px-2 md:px-0">
             {[
               {
                 question: "Which is the best travel agency in Coimbatore?",
-                answer: "Vibhu Travel Hub offers premium travel services, holiday packages, airport transfers, corporate travel and family trip planning."
+                answer: "Vibhu Travel Hub is a trusted travel agency in Coimbatore offering premium travel services, customized travel packages, family trips, corporate travel solutions, and group travel experiences. We focus on comfort, reliability, and seamless travel planning for every journey."
               },
               {
                 question: "Do you provide corporate travel services?",
-                answer: "Yes, Vibhu Travel Hub provides corporate travel solutions for business trips, office tours and group travel."
+                answer: "Yes, Vibhu Travel Hub provides professional corporate travel services for businesses, organizations, and corporate events. We ensure comfortable travel arrangements, airport transfers, team outings, and business travel solutions with reliable support."
               },
               {
                 question: "Do you arrange airport transfers?",
-                answer: "Yes, we provide airport travel services in Coimbatore and Chennai."
+                answer: "Yes, we provide airport travel services in Coimbatore and Chennai with timely pickup and drop arrangements. Our airport transfer solutions are designed for families, business travelers, and groups seeking a smooth and comfortable travel experience."
+              },
+              {
+                question: "Do you provide family and group travel services?",
+                answer: "Yes, we specialize in family trips, group travel services, holiday packages, pilgrimage tours, and customized travel experiences across Tamil Nadu and India. Our travel planning ensures a comfortable and memorable journey for every traveler."
+              },
+              {
+                question: "Do you offer customized travel packages?",
+                answer: "Absolutely. Vibhu Travel Hub creates customized travel packages based on your destination, budget, group size, and travel preferences. We help plan personalized trips for families, corporates, and holiday travelers."
               }
             ].map((faq, index) => (
               <motion.div
                 key={index}
-                className="bg-[#111]/90 backdrop-blur-md border border-[#ff0000]/30 hover:border-[#ff0000] hover:shadow-[0_0_20px_rgba(255,0,0,0.15)] rounded-[20px] overflow-hidden transition-all duration-300"
+                className="luxury-faq-card"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -614,12 +762,37 @@ function App() {
                   className="flex justify-between items-center w-full p-6 text-left text-white focus:outline-none cursor-pointer select-none"
                   onClick={() => toggleFaq(index)}
                 >
-                  <span className="text-lg md:text-xl font-semibold text-white flex items-center gap-4">
+                  <span className="text-lg md:text-xl font-bold text-white flex items-center gap-5 leading-snug">
                     {/* Glowing Question Badge */}
-                    <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-gradient-to-br from-[#ff0000]/20 to-[#b30000]/20 border border-[#ff0000]/30 flex items-center justify-center text-[#ff0000] font-bold text-sm shadow-[0_0_10px_rgba(255,0,0,0.1)]">
-                      ?
+                    <span className="luxury-faq-q-box">
+                      {index === 0 && (
+                        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                      )}
+                      {index === 1 && (
+                        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                      )}
+                      {index === 2 && (
+                        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 2L2 22l10-4 10 4L12 2z" />
+                        </svg>
+                      )}
+                      {index === 3 && (
+                        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                      )}
+                      {index === 4 && (
+                        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
+                        </svg>
+                      )}
                     </span>
-                    <span className="leading-snug">{faq.question}</span>
+                    <span>{faq.question}</span>
                   </span>
 
                   {/* Chevron Icon */}
@@ -645,7 +818,7 @@ function App() {
                       }}
                       transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
                     >
-                      <div className="px-6 pb-6 text-neutral-300 leading-relaxed text-base md:text-lg border-t border-white/[0.03] pt-4 pl-12">
+                      <div className="pl-6 md:pl-16 pr-6 pb-6 pt-4 text-neutral-300 leading-relaxed text-base md:text-lg border-t border-white/[0.03]">
                         {faq.answer}
                       </div>
                     </motion.div>
