@@ -15,7 +15,7 @@ function App() {
     setActiveFaq(activeFaq === index ? null : index);
   };
 
-  const scriptURL = "https://script.google.com/macros/s/AKfycbwBF5KLr-s8R7sRY4Fm5dv8LBZXjC-TtSLN2Ck5vQ6UPXPLPhbDdtzaEi_miWKtFA5h_A/exec";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbzkeVxrKIH33OW-253bKnIdbwuRz0PK7PF_1MnJT-N0Na_aFctCzRcgAroC1ab4ei5P/exec";
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -573,10 +573,10 @@ function App() {
         {/* Animated Particles & Glow Effects */}
         <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] rounded-full bg-red-600/10 blur-[150px] pointer-events-none animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-[450px] h-[450px] rounded-full bg-red-800/5 blur-[160px] pointer-events-none animate-pulse" style={{ animationDelay: '2s' }}></div>
-        
+
         {/* Background Grid Lines (Decorative) */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
-        
+
         {/* Animated Particles Container */}
         <div className="particles-container absolute inset-0 pointer-events-none opacity-40">
           <div className="particle particle-1"></div>
@@ -606,7 +606,7 @@ function App() {
             {/* 2x2 Centered Grid Layout */}
             <div className="luxury-grid">
               {/* Card 1 */}
-              <motion.div 
+              <motion.div
                 whileHover={{ y: -8, scale: 1.03 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 className="luxury-glass-card group text-left items-start"
@@ -628,7 +628,7 @@ function App() {
               </motion.div>
 
               {/* Card 2 */}
-              <motion.div 
+              <motion.div
                 whileHover={{ y: -8, scale: 1.03 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 className="luxury-glass-card group text-left items-start"
@@ -649,7 +649,7 @@ function App() {
               </motion.div>
 
               {/* Card 3 */}
-              <motion.div 
+              <motion.div
                 whileHover={{ y: -8, scale: 1.03 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 className="luxury-glass-card group text-left items-start"
@@ -670,7 +670,7 @@ function App() {
               </motion.div>
 
               {/* Card 4 */}
-              <motion.div 
+              <motion.div
                 whileHover={{ y: -8, scale: 1.03 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 className="luxury-glass-card group text-left items-start"
@@ -699,10 +699,10 @@ function App() {
         {/* Animated Particles & Glow Effects */}
         <div className="absolute top-1/4 left-1/4 w-[350px] h-[350px] rounded-full bg-red-600/10 blur-[130px] pointer-events-none animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] rounded-full bg-red-800/5 blur-[120px] pointer-events-none animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-        
+
         {/* Background Grid Lines (Decorative) */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
-        
+
         {/* Animated Particles Container */}
         <div className="particles-container absolute inset-0 pointer-events-none opacity-30">
           <div className="particle particle-3"></div>
