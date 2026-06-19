@@ -31,7 +31,8 @@ function App() {
     try {
       await fetch(scriptURL, {
         method: "POST",
-        body: formData,
+        mode: "no-cors",
+        body: formData
       });
 
       alert("Request submitted successfully!");
