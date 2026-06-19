@@ -15,7 +15,7 @@ function App() {
     setActiveFaq(activeFaq === index ? null : index);
   };
 
-  const scriptURL = "https://script.google.com/macros/s/AKfycbzkeVxrKIH33OW-253bKnIdbwuRz0PK7PF_1MnJT-N0Na_aFctCzRcgAroC1ab4ei5P/exec";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbw3rV8L72wNrJm1paXe4IGhIhybm4i_cXWyqGZxnM-XaKrukQ8gsuxUuUFl4a0hw9y4/exec";
   const handleSubmit = async (e) => {
     e.preventDefault();
 
