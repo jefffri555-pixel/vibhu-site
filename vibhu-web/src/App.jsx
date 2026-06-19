@@ -29,27 +29,26 @@ function App() {
     formData.append("TripDetails", tripDetails);
 
     try {
-      try {
-        await fetch(scriptURL, {
-          method: "POST",
-          mode: "no-cors",
-          body: formData
-        });
+      await fetch(scriptURL, {
+        method: "POST",
+        mode: "no-cors",
+        body: formData
+      });
 
-        alert("Request submitted successfully!");
+      alert("Request submitted successfully!");
 
-        setName("");
-        setPhone("");
-        setVehicleType("");
-        setPickupLocation("");
-        setDestination("");
-        setTripDetails("");
+      setName("");
+      setPhone("");
+      setVehicleType("");
+      setPickupLocation("");
+      setDestination("");
+      setTripDetails("");
 
-      } catch (error) {
-        console.error("Error:", error);
-        alert("Something went wrong");
-      }
-    });
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Something went wrong");
+    }
+
 
     alert("Request submitted successfully!");
 
