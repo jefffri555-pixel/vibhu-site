@@ -75,6 +75,15 @@ function App() {
       </header>
 
       <section className="hero" id="home">
+        <video
+          className="hero-video"
+          src="/hero-bg.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+        <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="tag">Coimbatore Bus • Taxi • Tempo Traveller • Tour Booking</div>
           <h1>
