@@ -56,7 +56,7 @@ function App() {
     <>
       <div className="topbar">
         <div>📍 Near VOC Park, Coimbatore Central, Coimbatore</div>
-        <div>📞 +91 96558 66660 | ✉️ vibhutravelhub@gmail.com</div>
+        <div>📞 +91 96558 66660 | ✉️ vibhutravelhub66@gmail.com</div>
       </div>
 
       <header>
@@ -405,7 +405,7 @@ function App() {
             <p><strong>Business:</strong> Vibhu TravelHub</p>
             <p><strong>Location:</strong> Near VOC Park, Coimbatore Central, Coimbatore</p>
             <p><strong>Phone:</strong> +91 96558 66660</p>
-            <p><strong>Email:</strong> vibhutravelhub@gmail.com</p>
+            <p><strong>Email:</strong> vibhutravelhub66@gmail.com</p>
             <p><strong>Services:</strong> Taxi, SUV, Tempo Traveller, Bus Rental, Tour Packages, Corporate Trips, Pilgrimage Tours.</p>
           </div>
 
@@ -585,7 +585,7 @@ function App() {
         </h3>
         <p>Bus, Taxi, Tempo Traveller & Tour Package Services</p>
         <p>Near VOC Park, Coimbatore Central, Coimbatore</p>
-        <p>Phone: +91 96558 66660 | Email: vibhutravelhub@gmail.com</p>
+        <p>Phone: +91 96558 66660 | Email: vibhutravelhub66@gmail.com</p>
         <p>© 2026 Vibhu TravelHub. All Rights Reserved.</p>
       </footer>
 
