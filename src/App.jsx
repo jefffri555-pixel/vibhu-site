@@ -56,7 +56,7 @@ function App() {
     <>
       <div className="topbar">
         <div>📍 Near VOC Park, Coimbatore Central, Coimbatore</div>
-        <div>📞 +91 96558 66660 | ✉️ vibhutravelhub66@gmail.com</div>
+        <div>📞 +91 96558 66660 | ✉️ vibhutravelhub@gmail.com</div>
       </div>
 
       <header>
